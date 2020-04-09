@@ -1,0 +1,384 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 10;
+	font-family: Montserrat, Arial, sans-serif;
+}
+
+p{
+	margin:0px;
+}
+
+.container {
+	position: relative;
+	max-width: 960px;
+	width: 100%;
+}
+
+.page-header {
+	background-attachment: fixed;
+	background-image: url(../img/capa-madmax2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 90vh;
+	justify-content:space-between;
+	padding:0px;
+	position: relative;
+	align-items: center;
+
+}
+
+.page-header:after {
+    background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% );
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+} 
+
+.menu .container{
+	display: flex;
+	align-items: center;
+	justify-content:space-evenly;
+}
+
+.menu {
+    z-index: 2;
+	display: flex;
+	margin-top: 10px;
+}
+
+.menu-logo{
+	display: inline-block;
+}
+
+.menu-list{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin: 0 100px;
+	padding: 0;
+	justify-content: center;
+}
+.menu-list a {
+	color: white;
+	text-decoration:none;
+	text-transform: uppercase;
+	word-wrap: normal;
+	font-weight:bold;
+	font-size: 14px;
+	
+}
+
+.menu-item{
+	list-style: none;
+	margin: 25px;
+	
+}
+
+.menu-user{
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	flex-wrap: none;
+	
+}
+
+.menu-user-name{
+	flex-wrap: nowrap;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+.menu-user img{
+
+	border-radius: 100%;
+    height: 45px;
+    margin-right: 15px;
+    overflow: hidden;
+	width: 45px;
+
+}
+.header-content{
+	max-width: 100%;
+	z-index: 2;
+	
+}
+.header-content .container{
+	position: relative;
+	flex-direction:column;
+	display: flex;
+	z-index: 2;	
+}
+.header-title{
+	
+	color: white;
+	font-size: 4.5em;
+    font-weight: bold;
+	line-height: 1.2em;
+	margin: 0;
+	text-transform: uppercase;	
+}
+.header-genero {
+	display: flex;
+
+}
+.header-genero a{
+	color: white;
+	line-height: inherit
+
+}
+
+.header-genero-item{
+	text-decoration:none;
+	text-transform: uppercase;
+	padding-right:10px;
+	margin-right: 15px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.header-button{
+	display: inline-block;
+	background-color:#e4bb23;
+	color:black;
+	text-decoration:none;
+	border-radius: 50px;
+	font-size:2em;
+	padding-top: 15px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+	padding-left: 50px;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+
+.header-info{
+	padding: 20px 0;
+    font-size: 1.4em;
+    color: #fff;
+}
+.header-info .header-date {
+    color: #bc9a1d;
+}
+
+.catalog-section{
+	background-color: #f2f2f2;
+	width: 100%;
+	flex: 1
+	
+}
+
+.catalog-menu{
+	
+	width: 100%;
+	padding:30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
+}
+.catalog-menu-list {
+	width: 100%;
+	display: flex;
+	justify-content:center;
+	list-style: none;
+	margin: 0 25px;
+	padding: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	
+}
+.catalog-menu-list-item{
+	margin:25px;
+	text-transform: uppercase;
+}
+
+
+.catalog-menu-list-item a{
+	color: #e4bb23;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.content{
+	margin:0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+.catalog-film-list{
+	
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+    padding: 5px 0;
+	width: 960px;
+}
+
+.catalog-film-list-item{
+	background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+	width: 24%;
+	margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+}
+.catalog-menu-list-item a:hover {
+	box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+.film-poster{
+	margin: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.film-poster img{
+    width: 100%;
+}
+
+
+.film-poster-info{
+	align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    padding: 80px 20px;
+    position: absolute;
+    text-align: center;     
+    top: 0;
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+.film-poster-link{
+	color: #fff;
+	font-size: 5em;
+	transition: all 0.2s ease-in-out;
+}
+
+
+.film-poster-info h3 {
+    color: #e4bb23;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+ 
+.film-poster-link:hover {
+	color: #e4bb23;
+}
+
+.film-sinopse{
+	padding:10px;	
+}
+
+.film-sinopse-title{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.sinopse-gender{
+	margin-bottom: 10px;
+}
+
+.sinopse-gender-item{
+	color: #e4bb23;
+	text-decoration: none;
+	font-size: 12px;
+	
+}
+.sinopse-gender-item:hover{
+	text-decoration: underline;
+	
+}
+
+.film-review{
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+	font-weight: bold;
+	padding:0;
+	
+}
+
+.film-review i{
+	color: #ccc;
+    cursor: pointer;
+}
+
+.film-review i:hover{
+	color: rgb(213, 16, 16);
+    cursor: pointer;
+}
+
+.catalog-film-list-item:hover .film-poster-info {
+	opacity: 1;
+	visibility: visible;
+}
+
+.footer-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+.footer-list{
+	display: flex;
+	list-style: none;
+	justify-content:space-between;
+	align-content: center;
+
+}
+.footer-list-item {
+	margin:15px;
+	font-size:30px
+	
+}
+.icon-twitter i{
+	color: #ccc;
+    cursor: pointer;
+}
+.icon-twitter i:hover{
+	color: #00acee;
+    
+}
+.icon-facebook i{
+	color: #ccc;
+    cursor: pointer;
+}
+.icon-facebook i:hover{
+	color:#3b5998;
+    cursor: pointer;
+}
+.icon-instagram i{
+	color: #ccc;
+    cursor: pointer;
+}
+.icon-instagram i:hover{
+	color: #e95950;
+    cursor: pointer;
+}
